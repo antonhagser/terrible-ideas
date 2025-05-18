@@ -3,6 +3,8 @@ BEGIN;
 
 CREATE EXTENSION IF NOT EXISTS http;
 
+SET http.curlopt_timeout_msec = 60000;
+
 ---------------------------------------------------------------
 -- 0. CONFIG – API key & model name
 ---------------------------------------------------------------
